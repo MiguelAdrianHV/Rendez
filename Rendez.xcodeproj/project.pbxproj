@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F358FA1C29FAD12700DD3156 /* RendezApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358FA1B29FAD12700DD3156 /* RendezApp.swift */; };
+		F358FA1E29FAD12700DD3156 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358FA1D29FAD12700DD3156 /* ContentView.swift */; };
+		F358FA2029FAD12800DD3156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F358FA1F29FAD12800DD3156 /* Assets.xcassets */; };
+		F358FA2329FAD12800DD3156 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F358FA2229FAD12800DD3156 /* Preview Assets.xcassets */; };
+		F358FA2D29FAD12800DD3156 /* RendezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358FA2C29FAD12800DD3156 /* RendezTests.swift */; };
+		F358FA3729FAD12800DD3156 /* RendezUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358FA3629FAD12800DD3156 /* RendezUITests.swift */; };
+		F358FA3929FAD12800DD3156 /* RendezUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358FA3829FAD12800DD3156 /* RendezUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F358FA2929FAD12800DD3156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F358FA1029FAD12700DD3156 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F358FA1729FAD12700DD3156;
+			remoteInfo = Rendez;
+		};
+		F358FA3329FAD12800DD3156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F358FA1029FAD12700DD3156 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F358FA1729FAD12700DD3156;
+			remoteInfo = Rendez;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F358FA1829FAD12700DD3156 /* Rendez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rendez.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F358FA1B29FAD12700DD3156 /* RendezApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendezApp.swift; sourceTree = "<group>"; };
+		F358FA1D29FAD12700DD3156 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F358FA1F29FAD12800DD3156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F358FA2229FAD12800DD3156 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F358FA2829FAD12800DD3156 /* RendezTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RendezTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F358FA2C29FAD12800DD3156 /* RendezTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendezTests.swift; sourceTree = "<group>"; };
+		F358FA3229FAD12800DD3156 /* RendezUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RendezUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F358FA3629FAD12800DD3156 /* RendezUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendezUITests.swift; sourceTree = "<group>"; };
+		F358FA3829FAD12800DD3156 /* RendezUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendezUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F358FA1529FAD12700DD3156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F358FA2529FAD12800DD3156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F358FA2F29FAD12800DD3156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F358FA0F29FAD12700DD3156 = {
+			isa = PBXGroup;
+			children = (
+				F358FA1A29FAD12700DD3156 /* Rendez */,
+				F358FA2B29FAD12800DD3156 /* RendezTests */,
+				F358FA3529FAD12800DD3156 /* RendezUITests */,
+				F358FA1929FAD12700DD3156 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F358FA1929FAD12700DD3156 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F358FA1829FAD12700DD3156 /* Rendez.app */,
+				F358FA2829FAD12800DD3156 /* RendezTests.xctest */,
+				F358FA3229FAD12800DD3156 /* RendezUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F358FA1A29FAD12700DD3156 /* Rendez */ = {
+			isa = PBXGroup;
+			children = (
+				F358FA1B29FAD12700DD3156 /* RendezApp.swift */,
+				F358FA1D29FAD12700DD3156 /* ContentView.swift */,
+				F358FA1F29FAD12800DD3156 /* Assets.xcassets */,
+				F358FA2129FAD12800DD3156 /* Preview Content */,
+			);
+			path = Rendez;
+			sourceTree = "<group>";
+		};
+		F358FA2129FAD12800DD3156 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F358FA2229FAD12800DD3156 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F358FA2B29FAD12800DD3156 /* RendezTests */ = {
+			isa = PBXGroup;
+			children = (
+				F358FA2C29FAD12800DD3156 /* RendezTests.swift */,
+			);
+			path = RendezTests;
+			sourceTree = "<group>";
+		};
+		F358FA3529FAD12800DD3156 /* RendezUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F358FA3629FAD12800DD3156 /* RendezUITests.swift */,
+				F358FA3829FAD12800DD3156 /* RendezUITestsLaunchTests.swift */,
+			);
+			path = RendezUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F358FA1729FAD12700DD3156 /* Rendez */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F358FA3C29FAD12800DD3156 /* Build configuration list for PBXNativeTarget "Rendez" */;
+			buildPhases = (
+				F358FA1429FAD12700DD3156 /* Sources */,
+				F358FA1529FAD12700DD3156 /* Frameworks */,
+				F358FA1629FAD12700DD3156 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rendez;
+			productName = Rendez;
+			productReference = F358FA1829FAD12700DD3156 /* Rendez.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F358FA2729FAD12800DD3156 /* RendezTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F358FA3F29FAD12800DD3156 /* Build configuration list for PBXNativeTarget "RendezTests" */;
+			buildPhases = (
+				F358FA2429FAD12800DD3156 /* Sources */,
+				F358FA2529FAD12800DD3156 /* Frameworks */,
+				F358FA2629FAD12800DD3156 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F358FA2A29FAD12800DD3156 /* PBXTargetDependency */,
+			);
+			name = RendezTests;
+			productName = RendezTests;
+			productReference = F358FA2829FAD12800DD3156 /* RendezTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F358FA3129FAD12800DD3156 /* RendezUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F358FA4229FAD12800DD3156 /* Build configuration list for PBXNativeTarget "RendezUITests" */;
+			buildPhases = (
+				F358FA2E29FAD12800DD3156 /* Sources */,
+				F358FA2F29FAD12800DD3156 /* Frameworks */,
+				F358FA3029FAD12800DD3156 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F358FA3429FAD12800DD3156 /* PBXTargetDependency */,
+			);
+			name = RendezUITests;
+			productName = RendezUITests;
+			productReference = F358FA3229FAD12800DD3156 /* RendezUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F358FA1029FAD12700DD3156 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F358FA1729FAD12700DD3156 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					F358FA2729FAD12800DD3156 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F358FA1729FAD12700DD3156;
+					};
+					F358FA3129FAD12800DD3156 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F358FA1729FAD12700DD3156;
+					};
+				};
+			};
+			buildConfigurationList = F358FA1329FAD12700DD3156 /* Build configuration list for PBXProject "Rendez" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F358FA0F29FAD12700DD3156;
+			productRefGroup = F358FA1929FAD12700DD3156 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F358FA1729FAD12700DD3156 /* Rendez */,
+				F358FA2729FAD12800DD3156 /* RendezTests */,
+				F358FA3129FAD12800DD3156 /* RendezUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F358FA1629FAD12700DD3156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F358FA2329FAD12800DD3156 /* Preview Assets.xcassets in Resources */,
+				F358FA2029FAD12800DD3156 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F358FA2629FAD12800DD3156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F358FA3029FAD12800DD3156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F358FA1429FAD12700DD3156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F358FA1E29FAD12700DD3156 /* ContentView.swift in Sources */,
+				F358FA1C29FAD12700DD3156 /* RendezApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F358FA2429FAD12800DD3156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F358FA2D29FAD12800DD3156 /* RendezTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F358FA2E29FAD12800DD3156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F358FA3929FAD12800DD3156 /* RendezUITestsLaunchTests.swift in Sources */,
+				F358FA3729FAD12800DD3156 /* RendezUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F358FA2A29FAD12800DD3156 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F358FA1729FAD12700DD3156 /* Rendez */;
+			targetProxy = F358FA2929FAD12800DD3156 /* PBXContainerItemProxy */;
+		};
+		F358FA3429FAD12800DD3156 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F358FA1729FAD12700DD3156 /* Rendez */;
+			targetProxy = F358FA3329FAD12800DD3156 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F358FA3A29FAD12800DD3156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F358FA3B29FAD12800DD3156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F358FA3D29FAD12800DD3156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rendez/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = migueladrianhv.Rendez;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F358FA3E29FAD12800DD3156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rendez/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = migueladrianhv.Rendez;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F358FA4029FAD12800DD3156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = migueladrianhv.RendezTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rendez.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rendez";
+			};
+			name = Debug;
+		};
+		F358FA4129FAD12800DD3156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = migueladrianhv.RendezTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rendez.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rendez";
+			};
+			name = Release;
+		};
+		F358FA4329FAD12800DD3156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = migueladrianhv.RendezUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rendez;
+			};
+			name = Debug;
+		};
+		F358FA4429FAD12800DD3156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = migueladrianhv.RendezUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rendez;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F358FA1329FAD12700DD3156 /* Build configuration list for PBXProject "Rendez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F358FA3A29FAD12800DD3156 /* Debug */,
+				F358FA3B29FAD12800DD3156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F358FA3C29FAD12800DD3156 /* Build configuration list for PBXNativeTarget "Rendez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F358FA3D29FAD12800DD3156 /* Debug */,
+				F358FA3E29FAD12800DD3156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F358FA3F29FAD12800DD3156 /* Build configuration list for PBXNativeTarget "RendezTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F358FA4029FAD12800DD3156 /* Debug */,
+				F358FA4129FAD12800DD3156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F358FA4229FAD12800DD3156 /* Build configuration list for PBXNativeTarget "RendezUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F358FA4329FAD12800DD3156 /* Debug */,
+				F358FA4429FAD12800DD3156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F358FA1029FAD12700DD3156 /* Project object */;
+}

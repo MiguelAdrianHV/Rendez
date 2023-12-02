@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct inputView: View {
+    @Binding var text: String
+    
+    let title: String
+    let placeholder: String
+    var isSecureField = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 12) {
+            Text(title)
+                .foregroundStyle(Color(.darkGray))
+                .fontWeight(.semibold)
+                .font(.footnote)
+            
+            if isSecureField {
+                SecureField(placeholder, text: $text)
+                    .font(.system(size: 14))
+            } else {
+                TextField(placeholder, text: $text)
+                    .font(.system(size: 14))
+            }
+            
+            Divider()
+        }
     }
 }
 
 #Preview {
-    inputView()
+    inputView(text: .constant(""), title: "Email Addres", placeholder: "name@example.com")
 }

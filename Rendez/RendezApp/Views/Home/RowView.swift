@@ -18,6 +18,7 @@ struct RowView: View {
                 Image("event-party-portada")
                     .resizable()
                     .scaledToFit()
+                    .previewLayout(.fixed(width: 400, height: 350))
             }
             VStack(alignment: .leading){
                 HStack {
@@ -35,7 +36,6 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(event:  Event(id: 1, name: "Powder Party", theme: "Party", image: Image(systemName: "party.popper.fill")))
-            .previewLayout(.fixed(width: 400, height: 350))
+        RowView(event:  Event(id: "1", name: "Powder Party", theme: "Party", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image: "party.popper.fill"))
     }
 }

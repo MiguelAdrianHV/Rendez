@@ -55,7 +55,7 @@ struct UserView: View {
                     })
                     
                     Button(action: {
-                        print("Delete Acoount...")
+                        viewModel.deleteAccount()
                     }, label: {
                         SettingsRowView(imageName: "xmark.circle.fill", title: "Delete Account", tintColor: .red)
                     })

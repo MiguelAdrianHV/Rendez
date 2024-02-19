@@ -60,7 +60,24 @@ class AuthViewModel: ObservableObject {
     }
     
     func deleteAccount() {
-        
+        do {
+            
+            if let user = Auth.auth().currentUser {
+                user.delete { error in
+                    if let error = error {
+                        print("Error deleting account: \(error.localizedDescription)")
+                    } else {
+                        print("Account deleted successfully!")
+                    }
+                }
+            }
+            
+            try Auth.auth().signOut()
+            self.UserSession = nil
+            self.currentUser = nil
+        } catch {
+            print("DEBUG: Failed to sign out with errors \(error.localizedDescription)")
+        }
     }
     
     func fetchUser() async {

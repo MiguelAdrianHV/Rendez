@@ -6,3 +6,9 @@
 //
 
 import Foundation
+let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .long
+        return formatter
+    }()

@@ -20,17 +20,18 @@ struct MainView: View {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
                 }
-            NotificationView()
-                .tabItem() {
-                    Image(systemName: "bell")
-                    Text("Notifications")
-                }
+//            NotificationView()
+//                .tabItem() {
+//                    Image(systemName: "bell")
+//                    Text("Notifications")
+//                }
             UserView()
                 .tabItem() {
                     Image(systemName: "person")
                     Text("User")
                 }
         }
+        .background(Color(.systemGroupedBackground))
     }
 }
 

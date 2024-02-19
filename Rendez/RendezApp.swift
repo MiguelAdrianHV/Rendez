@@ -22,6 +22,7 @@ struct RendezApp: App {
             ContentView()
                 .environmentObject(viewModelEvents)
                 .environmentObject(viewModel)
+                .environment(\.colorScheme, .light)
         }
     }
 }

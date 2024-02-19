@@ -9,57 +9,106 @@ import SwiftUI
 
 struct ListDetailView: View {
     @EnvironmentObject var viewModel: EventsViewModel
-    @Environment(\.presentationMode) var presentationMode
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var event: Event
     
     var body: some View {
-        VStack {
-            Image("event-party-portada")
-                .resizable()
-                .frame(width: 200, height: 200)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.black, lineWidth: 4))
-                .shadow(color: Color.gray, radius: 5)
-            HStack {
-                Text(event.name)
-            }
-                .font(.title)
-            Text("Event id: \(event.id)")
-            Text(event.theme)
-            
-            Text(event.description)
-                .padding()
-                .multilineTextAlignment(.center)
-            
-            Button(action: {
-                viewModel.deleteEvent(withID: event.id)
-                self.presentationMode.wrappedValue.dismiss()
-            }, label: {
-                HStack {
-                    Text("Delete Event")
-                        .fontWeight(.semibold)
-                    Image(systemName: "arrow.right")
+        ScrollView(.vertical) {
+            VStack {
+                VStack {
+                    Image(uiImage: event.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    
+                    
+                    VStack (alignment: .leading){
+                        HStack {
+                            Text(viewModel.currentEvent?.name ?? "Title")
+                            Spacer()
+                        }
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding()
+                        
+                        Text("Theme of the event:")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .padding(.vertical, 8)
+                        Text(viewModel.currentEvent?.theme ?? "Theme")
+                        
+                        Text("Description")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .padding(.vertical, 8)
+                        Text(viewModel.currentEvent?.description ?? "Description")
+                            .lineSpacing(8)
+                        
+                        Text("Date")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .padding(.vertical, 8)
+                        Text(viewModel.currentEvent?.eventDate ?? dateFormatter.string(from: Date()))
+                            
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(30)
+                    .offset(y: -40)
                 }
-                .foregroundColor(.white)
-                .frame(width: UIScreen.main.bounds.width - 32, height: 48)
-            })
+                
+                
+                Spacer()
+                
+                Button(action: {
+                    viewModel.deleteEvent(withID: event.id)
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
+                    HStack {
+                        Text("Delete Event")
+                            .fontWeight(.semibold)
+                        Image(systemName: "arrow.right")
+                    }
+                    .foregroundColor(.white)
+                    .frame(width: UIScreen.main.bounds.width - 32, height: 48)
+                })
                 .background(Color(.systemOrange))
                 .cornerRadius(10)
-                .padding(.top, 24)
                 
                 
+            }
         }
-        .navigationBarItems(trailing:
+        .edgesIgnoringSafeArea(.top)
+        .onAppear {
+            viewModel.fetchEventById(withId: event.id)
+        }
+        .navigationTitle("")
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+                                Button(action: {
+            presentationMode.wrappedValue.dismiss()
+        }, label: {
+            Image(systemName: "chevron.backward")
+                .padding(.all, 12)
+                .background(Color.white.opacity(0.75))
+                .cornerRadius(8)
+                .foregroundColor(Color.black)
+        }),
+                            trailing:
                                 NavigationLink(destination: UpdateEventView(event: event)) {
-            Text("Edit")
-                .foregroundColor(Color(.systemBlue))
-        } )
+            Image(systemName: "pencil")
+                .padding(.all, 12)
+                .background(Color.white.opacity(0.75))
+                .cornerRadius(8)
+                .foregroundColor(Color.black)
+        }
+        )
     }
 }
 
 struct ListDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ListDetailView(event: Event(id: "asd", name: "Como cocinar un huevo", theme: "Cocina", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image: "frying.pan"))
+        ListDetailView(event:  Event(id: "1", name: "Powder Party", theme: "Party", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image: UIImage( imageLiteralResourceName: "event-party-portada"), eventDate: dateFormatter.string(from: Date.now))).environmentObject(EventsViewModel())
     }
 }

@@ -10,6 +10,7 @@
 		F340FA3A2B18778600AACA44 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340FA392B18778600AACA44 /* EventsViewModel.swift */; };
 		F340FA3C2B18811B00AACA44 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340FA3B2B18811B00AACA44 /* AddEventView.swift */; };
 		F340FA3E2B19011A00AACA44 /* UpdateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340FA3D2B19011A00AACA44 /* UpdateEventView.swift */; };
+		F340FA402B21145900AACA44 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340FA3F2B21145900AACA44 /* ImagePicker.swift */; };
 		F358FA1C29FAD12700DD3156 /* RendezApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358FA1B29FAD12700DD3156 /* RendezApp.swift */; };
 		F358FA1E29FAD12700DD3156 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358FA1D29FAD12700DD3156 /* ContentView.swift */; };
 		F358FA2029FAD12800DD3156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F358FA1F29FAD12800DD3156 /* Assets.xcassets */; };
@@ -28,6 +29,9 @@
 		F391E6152B16CE9800E4CFF7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F391E6142B16CE9800E4CFF7 /* FirebaseFirestoreSwift */; };
 		F391E6172B16CE9800E4CFF7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F391E6162B16CE9800E4CFF7 /* FirebaseStorage */; };
 		F391E61A2B16CEEA00E4CFF7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391E6192B16CEEA00E4CFF7 /* AuthViewModel.swift */; };
+		F3D8E4BB2B34D2E7002EF782 /* UIScreen+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8E4BA2B34D2E7002EF782 /* UIScreen+App.swift */; };
+		F3EAFDCE2B7DDA8F00FF2F93 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EAFDCD2B7DDA8F00FF2F93 /* DateFormatter.swift */; };
+		F3EAFDD02B7E03EE00FF2F93 /* AuthViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EAFDCF2B7E03EE00FF2F93 /* AuthViewModelTests.swift */; };
 		F3EED28E2A26B53200588825 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EED28D2A26B53200588825 /* MainView.swift */; };
 		F3EED2912A26B74400588825 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EED2902A26B74400588825 /* Event.swift */; };
 		F3EED2942A26B82E00588825 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EED2932A26B82E00588825 /* RowView.swift */; };
@@ -60,6 +64,7 @@
 		F340FA392B18778600AACA44 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		F340FA3B2B18811B00AACA44 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		F340FA3D2B19011A00AACA44 /* UpdateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEventView.swift; sourceTree = "<group>"; };
+		F340FA3F2B21145900AACA44 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F358FA1829FAD12700DD3156 /* Rendez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rendez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F358FA1B29FAD12700DD3156 /* RendezApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendezApp.swift; sourceTree = "<group>"; };
 		F358FA1D29FAD12700DD3156 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +82,9 @@
 		F391E60B2B16B89500E4CFF7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F391E60D2B16C7A100E4CFF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F391E6192B16CEEA00E4CFF7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		F3D8E4BA2B34D2E7002EF782 /* UIScreen+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+App.swift"; sourceTree = "<group>"; };
+		F3EAFDCD2B7DDA8F00FF2F93 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		F3EAFDCF2B7E03EE00FF2F93 /* AuthViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelTests.swift; sourceTree = "<group>"; };
 		F3EED28D2A26B53200588825 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F3EED2902A26B74400588825 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F3EED2932A26B82E00588825 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
@@ -201,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				F358FA2C29FAD12800DD3156 /* RendezTests.swift */,
+				F3EAFDCF2B7E03EE00FF2F93 /* AuthViewModelTests.swift */,
 			);
 			path = RendezTests;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 		F391E5FA2B166D7000E4CFF7 /* RendezApp */ = {
 			isa = PBXGroup;
 			children = (
+				F3D8E4B82B34D2CE002EF782 /* Extensions */,
 				F391E6082B16B6DD00E4CFF7 /* Components */,
 				F391E5FE2B166DBB00E4CFF7 /* Model */,
 				F3EED2922A26B7F600588825 /* Views */,
@@ -272,6 +282,8 @@
 			isa = PBXGroup;
 			children = (
 				F391E6092B16B6ED00E4CFF7 /* SettingsRowView.swift */,
+				F340FA3F2B21145900AACA44 /* ImagePicker.swift */,
+				F3EAFDCD2B7DDA8F00FF2F93 /* DateFormatter.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -282,6 +294,14 @@
 				F391E6192B16CEEA00E4CFF7 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3D8E4B82B34D2CE002EF782 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8E4BA2B34D2E7002EF782 /* UIScreen+App.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F3EED2922A26B7F600588825 /* Views */ = {
@@ -439,11 +459,14 @@
 				F391E6052B16897700E4CFF7 /* inputView.swift in Sources */,
 				F340FA3C2B18811B00AACA44 /* AddEventView.swift in Sources */,
 				F3EED2962A26BA2100588825 /* ListView.swift in Sources */,
+				F340FA402B21145900AACA44 /* ImagePicker.swift in Sources */,
 				F3EED2A02A27EAE800588825 /* NotificationView.swift in Sources */,
 				F340FA3A2B18778600AACA44 /* EventsViewModel.swift in Sources */,
 				F3EED2942A26B82E00588825 /* RowView.swift in Sources */,
+				F3EAFDCE2B7DDA8F00FF2F93 /* DateFormatter.swift in Sources */,
 				F391E61A2B16CEEA00E4CFF7 /* AuthViewModel.swift in Sources */,
 				F3EED29E2A27EAD900588825 /* SearchView.swift in Sources */,
+				F3D8E4BB2B34D2E7002EF782 /* UIScreen+App.swift in Sources */,
 				F391E6072B168F1E00E4CFF7 /* RegistrationView.swift in Sources */,
 				F358FA1E29FAD12700DD3156 /* ContentView.swift in Sources */,
 				F340FA3E2B19011A00AACA44 /* UpdateEventView.swift in Sources */,
@@ -463,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EAFDD02B7E03EE00FF2F93 /* AuthViewModelTests.swift in Sources */,
 				F358FA2D29FAD12800DD3156 /* RendezTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
